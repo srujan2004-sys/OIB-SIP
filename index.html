@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Creative Calculator</h1>
+
+    <div id="container" class="container">
+        <form name="calculator">
+            <div class="wrapper">
+                <!-- Input Section -->
+                <div class="InputArea">
+                    <input id="inputBox" type="text" name="userInput" placeholder="0" disabled/>
+                </div>
+                <!-- Button Section -->
+                <div class="buttons">
+                    <div class="btn btnC"><input type="button" value="C" onclick="clearInput()"></div>
+                    <div class="btn btnBracket"><input type="button" value="(" onclick="appendCharacter('(')"></div>
+                    <div class="btn btnBracket"><input type="button" value=")" onclick="appendCharacter(')')"></div>
+                    <div class="btn btnOperator"><input type="button" value="/" onclick="appendCharacter('/')"></div>
+                    <div class="btn"><input type="button" value="7" onclick="appendCharacter('7')"></div>
+                    <div class="btn"><input type="button" value="8" onclick="appendCharacter('8')"></div>
+                    <div class="btn"><input type="button" value="9" onclick="appendCharacter('9')"></div>
+                    <div class="btn btnOperator"><input type="button" value="x" onclick="appendCharacter('*')"></div>
+                    <div class="btn"><input type="button" value="4" onclick="appendCharacter('4')"></div>
+                    <div class="btn"><input type="button" value="5" onclick="appendCharacter('5')"></div>
+                    <div class="btn"><input type="button" value="6" onclick="appendCharacter('6')"></div>
+                    <div class="btn btnOperator"><input type="button" value="-" onclick="appendCharacter('-')"></div>
+                    <div class="btn"><input type="button" value="1" onclick="appendCharacter('1')"></div>
+                    <div class="btn"><input type="button" value="2" onclick="appendCharacter('2')"></div>
+                    <div class="btn"><input type="button" value="3" onclick="appendCharacter('3')"></div>
+                    <div class="btn btnOperator"><input type="button" value="+" onclick="appendCharacter('+')"></div>
+                    <div class="btn"><input type="button" value="." onclick="appendCharacter('.')"></div>
+                    <div class="btn"><input type="button" value="0" onclick="appendCharacter('0')"></div>
+                    <div class="btn"><input type="button" value="%" onclick="appendCharacter('%')"></div>
+                    <div class="btn btnEq"><input type="button" value="=" onclick="calculate()"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
