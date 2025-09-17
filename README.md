@@ -1,3 +1,2 @@
-# OIB-SIP
-This project is on the oasis infobyte internship on web development and design
- TASK 2;
+#Demo Project
+ Thsi is the demo project on portfolio
